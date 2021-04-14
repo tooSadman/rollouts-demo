@@ -9,5 +9,7 @@ spec:
     targetPort: http
     protocol: TCP
     name: http
+    nodePort: 30902
   selector:
     app: rollouts-demo
+  type: NodePort
